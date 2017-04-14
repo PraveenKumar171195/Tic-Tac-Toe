@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <style>
+            .square{
+              
+            }
+
+            .v{
+                border-left:3px solid #000; 
+                border-right:3px solid #000;
+            }
+
+            .h{
+                border-top:3px solid #000;
+                border-bottom:3px solid #000;
+            }
+            .top{
+              margin-top:400px;margin-bottom:10px;
+            }
+            body 
+              {
+                background-image: url("images/2.png");
+                background-color: #cccccc;
+                background-repeat: no-repeat;
+                width: 100%;
+                min-height: 500px;
+                background-position: center;
+                background-size: cover;
+              }
+              @media (max-width: 991px) { .top{
+              margin-top:400px;margin-bottom:10px;
+            }}
+@media  (max-width: 768px) { .top{
+              margin-top:300px;margin-bottom:10px;
+            }}
+@media  (max-width: 480px) { .top{
+              margin-top:300px;margin-bottom:10px;
+            }}
+        </style>
+    </head>
+<body>
+<form method="post" action="servlet">
+<div class="container">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top">
+      <a href="home.html">
+        <div class="col-xs-3 col-md-2 col-md-offset-1 col-lg-1 col-lg-offset-2" style="margin-top:10px;text-align:center;text-decoration:none;color:#000;opacity:1.0;font-size:14px;background-color:#19a69a;padding:10px;border-radius:5px;box-shadow:0 0 5px #ccc;font-family:verdana;font-weight:bold;border:solid thin #ccc;">
+       HOME
+      </div>
+    </a>    
+      <div class="col-xs-9 col-md-3 col-md-offset-2 col-lg-3 col-lg-offset-1" style="margin-top:5px;text-align:center;text-decoration:none;color:#fff;opacity:1.0;font-size:22px;padding:10px;font-family:verdana;font-weight:bold;">
+       SIGN IN
+      </div>   
+  </div>
+  <div class="col-xs-12 col-sm-6 col-sm-offset-2 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4" style="margin-top:0px;margin-bottom:20px;padding:0px">
+       <p style="margin-top:0px;margin-bottom:20px;">
+       
+     <label style="color:#fff;font-family:verdana;font-size:18px;">Username :</label>
+     <input type="text" name="name" style="padding:5px;border-radius:2px;border:none;"><br><br><br>
+     <label style="color:#fff;font-family:verdana;font-size:18px;">Password &nbsp;:</label>
+     <input type="password" name="pass" style="padding:5px;border-radius:2px;border:none;"><br>
+<button type="reset" value="Reset" style="font-weight:bold;font-size:14px;margin-top:40px;padding:10px;width:100px;border-radius:2px;border:solid thin #454545;background-color:#fafafa;color:#000;width:120px">CANCEL </button>
+<button type="submit" name="log"  value="SIGN IN" style="font-weight:bold;font-size:14px;margin-top:40px;padding:10px;width:100px;border-radius:2px;border:solid thin #454545;background-color:#fafafa;color:#000;width:120px">LOGIN</button><br><br>
+ <label style="color:#fff;font-family:verdana;font-size:12px;">FORGET PASSWORD</label>
+</p>
+  </div>
+</div>
+</form>
+<script src="js/jquery-1.11.1.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
